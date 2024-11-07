@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,29 +18,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-light" href="#">Anagrafica Utenti</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link text-light" href="#">Storico prestiti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled text-light" aria-disabled="true">Help</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -63,29 +55,84 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th>Titolo</th>
+              <th class="d-none d-md-block">Data prestito</th>
+              <th>Stato</th>
+              <th >Azioni</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>I pilastri della terra</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>I promessi sposi</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Il signore degli anelli</td>
+              <td class="d-none d-md-block"><span>18/10/2023</span></td>
+              <td><span class="badge bg-warning">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Harry Potter e la pietra filosofale</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Il codice da Vinci</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-danger">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Shining</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>La divina commedia</td>
+              <td class="d-none d-md-block"><span>21/09/2023</span></td>
+              <td><span class="badge bg-warning">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Il trono di spade</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Il mondo di Sofia</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-danger">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+              <td class="d-none d-md-block"><span>25/07/23</span></td>
+              <td><span class="badge bg-warning">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>Il piccolo principe</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
+            </tr>
+            <tr>
+              <td>La storia infinita</td>
+              <td class="d-none d-md-block"><span>-</span></td>
+              <td><span class="badge text-bg-success">Disponibile</span></td>
+              <td>modify delete</td>
             </tr>
           </tbody>
         </table>
